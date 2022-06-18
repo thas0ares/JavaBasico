@@ -1,0 +1,33 @@
+ package exerciciorepita01;
+
+import javax.swing.JOptionPane;
+
+public class ExercicioRepita01 {
+	public static void main(String[] args) {
+		int s = 0,  p = 0,  i = 0,  a = 0, m = 0, cont = 0;
+		int n;
+		
+		do {
+			n = Integer.parseInt(JOptionPane.showInputDialog(null,
+					"<html>Informa um número: <br> <em>(valor 0 interrompe)</em></html/>"));
+			s += n;
+			cont++;
+			if (n % 2 == 0) {
+				p += 1;
+			 } 
+			if (n % 2 == 1) {
+				i += 1;
+			}
+			if (n > 100) {
+				a += 1;
+			}
+			if (n >=0 ) {
+				m = s/cont;
+			}
+		} while (n != 0);
+		JOptionPane.showMessageDialog(null, "<html>Resultado: <hr>" + 
+		"<br>Total de Valores: " + s + "<br>Total de pares: " + p + 
+		"<br>Total de ímpares: " + i + "<br> acima de 100:  " + a +
+		"<br>média dos valores" + m + "</html>");
+	}
+}

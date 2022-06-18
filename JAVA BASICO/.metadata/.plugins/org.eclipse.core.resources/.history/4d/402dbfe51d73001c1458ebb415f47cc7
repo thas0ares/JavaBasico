@@ -1,0 +1,27 @@
+package testes;
+
+import java.util.Scanner;
+
+public class Desafio3 {
+	/*
+	 * 2 - Escreva um programa que leia a 5 números e exiba ao final qual deles foi o maior digitado e qual deles foi o menor digitado
+	 */
+	public static void main(String[] args) {
+		
+		int n;
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		try {
+			
+			System.out.println("Digite 5 números: ");
+			
+			for (int n = 0; n <= 5; n=n+1) {
+				n = scanner.nextInt();
+			}
+		} catch (Exception e) {
+			// TODO: handle exception	
+		}
+		
+	}
+}

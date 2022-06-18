@@ -1,0 +1,25 @@
+package testes;
+
+public class TestaVariaveis {
+
+	public static void main(String[] args) {
+		// variavel global
+		int numero = 2;
+		
+		boolean c = 1==1;
+		boolean b = c;
+		if (b) {
+			//variavel local
+			int outroNumero = 4;
+			System.out.println("A variável local é "+ outroNumero);
+			System.out.println("A variável global é " + numero);
+		}
+		System.out.println("A variável global é " + numero);
+		
+		if ('a'=='a') {
+			numero = 4;
+			System.out.println("O novo valor da variável global é " + numero);
+		}
+		System.out.println("O novo valor da variável global é " + numero);
+	}
+}

@@ -1,0 +1,17 @@
+package testes;
+
+import classes.Edificio;
+
+public class TestaEdificio {
+
+	public static void main(String[] args) {
+
+		Edificio edificio = new Edificio();
+		edificio.setAndares(14);
+		edificio.setNome("Sync");
+		System.out.println(
+				"Este Edifício tem " + edificio.getAndares() + " andares." + "E seu nome é " + edificio.getNome());
+		edificio.mostrarMoradores();
+	}
+
+}

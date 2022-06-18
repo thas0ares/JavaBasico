@@ -1,0 +1,26 @@
+package classes;
+
+public class Edificio {
+	int andares;
+	String nome;
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public int getAndares() {
+		return andares;
+	}
+
+	public void setAndares(int andares) { // eu posso passar parâmetro
+		this.andares = andares;
+	}
+	
+	public void mostrarMoradores() { // ou não preciso passar passar parâmetro
+		System.out.println("Só mora rico aqui!");
+	}
+}

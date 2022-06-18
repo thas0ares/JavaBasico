@@ -1,0 +1,15 @@
+package exerciciorepita;
+
+import javax.swing.JOptionPane; //são paineis prontos/telas prontas
+
+public class ExercicioRepita {
+
+	public static void main(String[] args) {
+		// JOptionPane.showMessageDialog(null -> nome da janela, "Olá Mundo!", "Boas Vindas", JOptionPane.ERROR_MESSAGE); exemplo
+		int n;
+		do {
+			n = Integer.parseInt(JOptionPane.showInputDialog(null, "Informa um número: "));
+		} while (n != 0); // n diferente de 0
+	}
+
+}

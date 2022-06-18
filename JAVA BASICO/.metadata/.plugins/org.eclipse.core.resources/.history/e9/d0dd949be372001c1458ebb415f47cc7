@@ -1,0 +1,8 @@
+package testes;
+
+public class Desafio3 {
+	/*
+	 * 2 - Escreva um programa que leia a 5 números e exiba ao final qual deles foi o maior digitado e qual deles foi o menor digitado
+	 */
+
+}

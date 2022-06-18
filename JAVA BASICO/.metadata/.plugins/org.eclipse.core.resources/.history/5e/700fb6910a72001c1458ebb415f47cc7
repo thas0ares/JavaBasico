@@ -1,0 +1,19 @@
+package exerciciorepita;
+
+import javax.swing.JOptionPane; //são paineis prontos/telas prontas
+
+public class ExercicioRepita {
+
+	public static void main(String[] args) {
+		// JOptionPane.showMessageDialog(null -> nome da janela, "Olá Mundo!", "Boas
+		// Vindas", JOptionPane.ERROR_MESSAGE); exemplo
+		int n, s;
+		do {
+			n = Integer.parseInt(JOptionPane.showInputDialog(null,
+					"<html>Informa um número: <br> <em>(valor 0 interrompe)</em></html/>"));
+			s += n;
+		} while (n != 0); // n diferente de 0
+		JOptionPane.showMessageDialog(null, "<html>Resultado final <hr>" + "<br> Somatório vale" + s + "</html>");
+	}
+
+}

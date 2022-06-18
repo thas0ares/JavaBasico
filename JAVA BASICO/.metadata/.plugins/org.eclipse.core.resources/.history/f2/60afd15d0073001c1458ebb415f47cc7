@@ -1,0 +1,31 @@
+package testes;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Exercicio6 {
+	public static void main(String[] args) {
+		
+		String sexo;
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		try { // caminho feliz: ele está esperando que o usuário coloque a entrada certa
+
+			System.out.println("Qual a sigla do seu sexo M ou F?");
+			sexo = scanner.next();
+			
+			if (sexo.equals("M") || sexo.equals("m")) { // serve para comparar string
+				System.out.println("Masculino");
+			} else if (sexo.equals("F") || sexo.equals("f")) {
+				System.out.println("Feminino");
+			} 
+//			else {
+//				System.out.println("Entrada inválida"); // se quer assumir apenas entradas validas faz-se necessário
+//			}// realizar o tratamento de entrada inválida
+
+		} catch (InputMismatchException e) { // se não ele vai mostrar um erro que o usuário está cometendo
+			System.out.println("Entrada inválida!");
+		}
+	}
+}

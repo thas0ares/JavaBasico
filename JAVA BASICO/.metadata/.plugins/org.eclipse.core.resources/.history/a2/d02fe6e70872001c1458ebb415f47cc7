@@ -1,0 +1,11 @@
+package exerciciorepita;
+
+import javax.swing.JOptionPane; //são paineis prontos/telas prontas
+
+public class ExercicioRepita {
+
+	public static void main(String[] args) {
+		JOptionPane.showMessageDialog(null, "Olá Mundo!", "Boas Vindas", JOptionPane.WARNING_MESSAGE);;
+	}
+
+}

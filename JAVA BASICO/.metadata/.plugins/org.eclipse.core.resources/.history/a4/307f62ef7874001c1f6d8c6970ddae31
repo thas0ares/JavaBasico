@@ -1,0 +1,11 @@
+package testefuncao03;
+
+public class TesteFuncao03 {
+	public static void main(String[] args) { // public torna o metodo publico, static você não precisa transformar em
+												// objeto para utiliza-lo, void o meu método não vai me retornar um
+												// valor, e args é um vetor de String
+		System.out.println("Vai começar a contagem");
+		System.out.println(Operacoes.contador(1, 5));// escrever na tela o resultado do contador, chamando do outro
+														// arquivo, em método se ele for estático
+	}
+}
